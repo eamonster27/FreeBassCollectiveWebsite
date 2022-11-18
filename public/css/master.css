@@ -1,0 +1,454 @@
+/*--------MOBILE SIZE--------*/
+/*--------MOBILE SIZE--------*/
+/*--------MOBILE SIZE--------*/
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0px;
+  font-family: copperplate;
+  height: 100%;
+}
+
+button {
+  font-family: copperplate;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+header, footer {
+  height: 50px;
+  display: flex;
+}
+
+header {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+}
+
+header > h3 {
+  margin-left: 10px;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+#footer-nav {
+  margin-top: -50px;
+}
+
+#header-nav > ul {
+  justify-content: flex-end;
+  margin: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#footer-nav > ul {
+  justify-content: center;
+  margin: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#footer-nav li, #header-nav li {
+  list-style-type: none;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropbtn {
+  background-color: Transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ecf0f1;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #34495e;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #2980b9;
+  color: #ecf0f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  border-top-style: solid;
+  border-top-color: white;
+}
+
+/*-----HOMEPAGE-----*/
+/*-----HOMEPAGE-----*/
+/*-----HOMEPAGE-----*/
+.homepage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.homepage > h2 {
+  margin: 0px 10px 8px 10px;
+  padding-top: 50px;
+  color: #ecf0f1;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#pic-bio {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+#pic-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+#title {
+  padding-top: -20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#education {
+  text-align: center;
+}
+
+#blog a {
+  text-decoration: none;
+  color: #2ecc71;
+}
+
+#bio {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  color: #ecf0f1;
+  font-weight: lighter;
+  width: 80%;
+}
+
+#bio b {
+  color: #9b59b6;
+}
+
+#title, #education {
+  color: #ecf0f1;
+  font-weight: lighter;
+}
+
+.featured-projects {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0px 20 0px;
+  padding-bottom: 20px;
+}
+
+.project {
+  width: 70%;
+  height: 275px;
+  border-style: solid;
+  border-color: #ecf0f1;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.proj-name h5 {
+  margin: 0px;
+}
+
+.proj-name a {
+  text-decoration: none;
+  color: #9b59b6;
+}
+
+.thumbnail > div {
+  background-position: center;
+  background-size: cover;
+  width: 175px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+#proj-img-1 {
+  background-image: url("../images/soundcloud.png");
+}
+
+#proj-img-2 {
+  background-image: url("../images/mysteryword.png");
+}
+
+#proj-img-3 {
+  background-image: url("../images/calculator.png");
+}
+
+@media only screen and (min-width:240px) {
+
+  #footer-nav div {
+    background-position: center;
+    background-size: cover;
+  }
+
+  #footer-nav {
+    margin-top: -75px;
+  }
+
+  #facebook {
+    background-image: url("../images/facebook.png");
+    height: 82px;
+    width: 82px;
+    margin-top: 5px;
+  }
+
+  #instagram {
+    background-image: url("../images/instagram.png");
+    height: 69px;
+    width: 69px;
+  }
+
+  #twitter {
+    background-image: url("../images/twitter.png");
+    height: 82px;
+    width: 82px;
+    margin-top: 5px;
+    margin-left: 4px;
+  }
+
+  #soundcloud {
+    background-image: url("../images/soundcloud.png");
+    height: 75px;
+    width: 73px;
+    margin-top: -3px;
+    margin-left: -7px;
+  }
+}
+
+/*--------TABLET SIZE--------*/
+/*--------TABLET SIZE--------*/
+/*--------TABLET SIZE--------*/
+@media only screen and (min-width:545px) {
+  .featured-projects {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 0px 20px 0px;
+    padding-bottom: 20px;
+  }
+
+  .project {
+    width: 40%;
+    height: 310px;
+    border-style: solid;
+    border-color: #ecf0f1;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .thumbnail > div {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 250px;
+  }
+}
+/*--------DESKTOP SIZE--------*/
+/*--------DESKTOP SIZE--------*/
+/*--------DESKTOP SIZE--------*/
+@media only screen and (min-width:775px) {
+  /*-----HOMEPAGE-----*/
+  /*-----HOMEPAGE-----*/
+  /*-----HOMEPAGE-----*/
+  .homepage > h2 {
+    margin: 0px 10px 8px 10px;
+    padding-top: 50px;
+    color: #ecf0f1;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  #pic-bio {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  #pic {
+    background-image: url("../images/FB Text Logo Transparent.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    height: auto;
+    width: 90%;
+  }
+
+  #bio {
+    margin-right: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    color: #ecf0f1;
+    font-weight: lighter;
+    width: 60%;
+    font-size: 24px;
+  }
+
+  .featured-projects {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 10px 0px 20px 0px;
+    padding-bottom: 20px;
+  }
+
+  .project {
+    width: 28%;
+    height: 350px;
+    border-style: solid;
+    border-color: #ecf0f1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .proj-name h2 {
+    margin: 0px;
+  }
+
+  .thumbnail > div {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 250px;
+    margin-top: 5px;
+  }
+
+  #footer-nav div {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #facebook {
+    background-image: url("../images/facebook.png");
+    height: 57px;
+    width: 57px;
+    margin-top: 5px;
+  }
+
+  #instagram {
+    background-image: url("../images/instagram.png");
+    height: 69px;
+    width: 69px;
+  }
+
+  #twitter {
+    background-image: url("../images/twitter.png");
+    height: 57px;
+    width: 57px;
+    margin-top: 5px;
+    margin-left: 4px;
+  }
+
+  #soundcloud {
+    background-image: url("../images/soundcloud.png");
+    height: 75px;
+    width: 73px;
+    margin-top: -3px;
+    margin-left: -7px;
+  }
+
+  #footer-nav {
+    margin-top: -75px;
+  }
+}
+/*--------LARGE DESKTOP SIZE--------*/
+/*--------LARGE DESKTOP SIZE--------*/
+/*--------LARGE DESKTOP SIZE--------*/
+@media only screen and (min-width:1100px) {
+  .featured-projects {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 10px 0px 20px 0px;
+    padding-bottom: 20px;
+  }
+
+  .project {
+    width: 26%;
+    height: 400px;
+    border-style: solid;
+    border-color: #ecf0f1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .thumbnail > div {
+    background-position: center;
+    background-size: cover;
+    width: 275px;
+    height: 300px;
+    margin-top: 5px;
+  }
+}
