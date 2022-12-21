@@ -49,7 +49,7 @@ header > h3 {
 }
 
 #footer-nav {
-  margin-top: -50px;
+  margin-top: 50px;
 }
 
 #header-nav > ul {
@@ -222,16 +222,126 @@ header a {
   margin-bottom: 15px;
 }
 
-#proj-img-1 {
-  background-image: url("../images/soundcloud.png");
+.members {
+  display: flex;
+  flex-flow: column;
 }
 
-#proj-img-2 {
-  background-image: url("../images/mysteryword.png");
+.member {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#proj-img-3 {
-  background-image: url("../images/calculator.png");
+.member h1 {
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.member-details {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.membership-details-right {
+  width: 50%;
+}
+
+.membership-details-left {
+  width: 50%;
+}
+
+#shaman-logo {
+  background-image: url("../images/African_Shaman_Logo_Greyscale.PNG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 45%;
+}
+
+#shaman > p {
+  color: white;
+  width: 45%;
+  font-size: 12px;
+}
+
+#consecrate-logo {
+  background-image: url("../images/CS-Logov2.PNG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 45%;
+}
+
+#consecrate > p {
+  color: white;
+  width: 45%;
+  font-size: 12px;
+}
+
+#contorta-logo {
+  background-image: url("../images/Contorta_Greyscale.PNG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 45%;
+}
+
+#contorta > p {
+  color: white;
+  width: 45%;
+  font-size: 12px;
+}
+
+#dex-logo {
+  background-image: url("../images/inverttransparent.PNG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 45%;
+}
+
+#dex > p {
+  color: white;
+  width: 45%;
+  font-size: 12px;
+}
+
+#gumbii-logo {
+  background-image: url("../images/IMG_9783.PNG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 45%;
+}
+
+#gumbii > p {
+  color: white;
+  width: 45%;
+  font-size: 12px;
+}
+
+#misko-logo {
+  background-image: url("../images/IMG_9780.PNG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 45%;
+}
+
+#misko > p {
+  color: white;
+  width: 45%;
+  font-size: 12px;
 }
 
 @media only screen and (min-width:240px) {
@@ -390,35 +500,36 @@ header a {
 
   #facebook {
     background-image: url("../images/facebook.png");
-    height: 57px;
-    width: 57px;
+    height: 37px;
+    width: 37px;
     margin-top: 5px;
   }
 
   #instagram {
     background-image: url("../images/instagram.png");
-    height: 69px;
-    width: 69px;
+    height: 43px;
+    width: 43px;
+    margin-top: 2px;
   }
 
   #twitter {
     background-image: url("../images/twitter.png");
-    height: 57px;
-    width: 57px;
+    height: 37px;
+    width: 37px;
     margin-top: 5px;
     margin-left: 4px;
   }
 
   #soundcloud {
     background-image: url("../images/soundcloud.png");
-    height: 75px;
-    width: 73px;
-    margin-top: -3px;
+    height: 48px;
+    width: 46px;
+    margin-top: 1px;
     margin-left: -7px;
   }
 
   #footer-nav {
-    margin-top: -75px;
+    margin-top: -55px;
   }
 }
 /*--------LARGE DESKTOP SIZE--------*/

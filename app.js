@@ -12,5 +12,7 @@ app.set('layout', 'base');
 app.use(bodyParser.urlencoded({extended: false}));
 
 const homepageRoute = require('./routes/homepage');
+const membersRoute = require('./routes/members');
 
 app.use(homepageRoute);
+app.use(membersRoute);
